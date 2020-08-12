@@ -1,0 +1,6 @@
+jobs:
+  main:
+    image: node:12
+    steps:
+      - ls -la
+    requires: [ ~pr, ~commit ]
